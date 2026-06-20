@@ -22,6 +22,10 @@ video/
 *.jpeg
 *.png
 *.heic
+!assets/
+!assets/*.jpg
+!assets/*.jpeg
+!assets/*.png
 
 # Secrets and local environment
 .env

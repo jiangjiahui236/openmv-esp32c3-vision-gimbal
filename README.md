@@ -3,6 +3,8 @@
 
 这是一个基于 OpenMV、ESP32-C3 和 Arduino Nano 的二自由度视觉追踪云台项目。OpenMV 负责识别人脸或红色圆球，ESP32-C3 提供 Wi-Fi 热点网页和参数下发，Arduino Nano 作为 I2C 从机负责舵机平滑控制。
 
+![OpenMV ESP32-C3 视觉追踪云台](assets/cover.jpg)
+
 ## 功能特点
 
 - OpenMV H7/H7 R2 视觉识别
@@ -17,6 +19,30 @@
 - Arduino Nano 舵机控制
   - I2C 从机地址为 `0x12`
   - 接收 yaw/pitch 角度并平滑驱动两个 180 度舵机
+
+## 项目展示
+
+### 实物结构
+
+![云台实物结构](assets/hardware.jpg)
+
+### 网页控制界面
+
+![ESP32-C3 网页控制与调参界面](assets/web-ui.png)
+
+### 手动控制演示
+
+![网页摇杆控制云台](assets/manual-control.jpg)
+
+### 视觉识别效果
+
+![OpenMV 人脸识别演示](assets/face-tracking.png)
+
+![OpenMV 红色圆球识别演示](assets/red-circle-tracking.png)
+
+## 系统流程
+
+![视觉追踪云台控制流程](assets/control-flow.png)
 
 ## 目录结构
 
