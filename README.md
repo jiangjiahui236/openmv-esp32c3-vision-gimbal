@@ -22,6 +22,8 @@
 
 ## 项目展示
 
+演示视频：[胡乱拼凑出来的桌面机器人](https://www.bilibili.com/video/BV1PGjn6CEbv/?share_source=copy_web&vd_source=60af6b59c9c92411cc95d2f433e9013b)
+
 ### 实物结构
 
 ![云台实物结构](assets/hardware.jpg)
