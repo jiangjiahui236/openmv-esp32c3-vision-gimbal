@@ -1,0 +1,37 @@
+# Build outputs
+build/
+dist/
+.pio/
+.vscode/
+.idea/
+__pycache__/
+
+# Local notes and reports
+ai.md
+*.doc
+*.docx
+*.pdf
+
+# Media captured during testing
+video/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.jpg
+*.jpeg
+*.png
+*.heic
+
+# Secrets and local environment
+.env
+.env.*
+secrets.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# OS files
+Thumbs.db
+.DS_Store
