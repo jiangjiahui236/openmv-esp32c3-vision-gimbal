@@ -1,6 +1,5 @@
 # OpenMV ESP32-C3 Vision Gimbal
 
-中文名：OpenMV ESP32-C3 视觉追踪云台
 
 这是一个基于 OpenMV、ESP32-C3 和 Arduino Nano 的二自由度视觉追踪云台项目。OpenMV 负责识别人脸或红色圆球，ESP32-C3 提供 Wi-Fi 热点网页和参数下发，Arduino Nano 作为 I2C 从机负责舵机平滑控制。
 
@@ -210,17 +209,6 @@ PITCH_SIGN = 1
 
 脚本会依次尝试 `/rom/haarcascade_frontalface.cascade`、`frontalface`、`frontalface.cascade` 三种路径。如果都找不到，不会直接崩溃，而是临时退回红圆模式。遇到这种情况，可以在 OpenMV IDE 中执行 `Tools -> Reset OpenMV Cam`，或更新/重刷固件以恢复 ROMFS 文件。
 
-## 开源发布说明
-
-本目录用于发布到 GitHub，已排除课程报告、照片、视频、本地开发记录和机器相关文件。
-
-发布前建议在本目录运行一次扫描：
-
-```powershell
-rg -n -i "(password|passwd|token|secret|api[_-]?key|ssid|wifi|邮箱|电话|学号|姓名|C:\\\\Users|PRIVATE|BEGIN RSA|OPENAI|github|ghp_|sk-)" .
-```
-
-预期会命中 `AP_SSID`、`AP_PASSWORD`、README 网络说明和 `OPEN_SOURCE_CHECK.md`。其中 `change-me` 是给使用者替换的占位密码。
 
 ## 许可证
 
